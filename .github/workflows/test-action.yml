@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Test action
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
       - name: Upload Robot to Robocorp Cloud
-        uses: ./
+        uses: robocorp/action-upload-robot
         with:
           workspace-key: ${{ secrets.ROBOCORP_WORKSPACE_KEY }}
           workspace-id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
