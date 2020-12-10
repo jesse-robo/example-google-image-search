@@ -9,7 +9,7 @@ Library           RPA.Browser
 
 *** Variables ***
 ${GOOGLE_URL}     https://google.com/?hl=en
-${SEARCH_TERM}    cute cat picture
+${SEARCH_TERM}    cute giraffe picture
 
 *** Keywords ***
 Accept Google Consent
