@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 12.x
       - name: Upload Robot to Robocorp Cloud
-        uses: robocorp/action-upload-robot@65220a3a31a8d002f662ff957c3de2b31ee0bbbe
+        uses: robocorp/action-upload-robot@1.0.0
         with:
           workspace-key: ${{ secrets.ROBOCORP_WORKSPACE_KEY }}
           workspace-id: ${{ secrets.ROBOCORP_WORKSPACE_ID }}
